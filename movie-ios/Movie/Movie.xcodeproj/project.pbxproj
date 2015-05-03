@@ -414,6 +414,7 @@
 				F4A071A31AF3BA31003ABFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4A071A41AF3BA31003ABFB3 /* Build configuration list for PBXNativeTarget "MovieTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +423,7 @@
 				F4A071A61AF3BA31003ABFB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
