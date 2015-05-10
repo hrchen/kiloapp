@@ -14,6 +14,11 @@
 		F4A0718F1AF3BA31003ABFB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */; };
 		F4A071921AF3BA31003ABFB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A071901AF3BA31003ABFB3 /* LaunchScreen.xib */; };
 		F4A0719E1AF3BA31003ABFB3 /* MovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A0719D1AF3BA31003ABFB3 /* MovieTests.m */; };
+		F4FDA8061AFF9BE8006C197D /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA8051AFF9BE8006C197D /* DMViewController.m */; };
+		F4FDA8091AFF9CB5006C197D /* DMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA8081AFF9CB5006C197D /* DMHomeViewController.m */; };
+		F4FDA80C1AFF9CD3006C197D /* DMMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA80B1AFF9CD3006C197D /* DMMovieViewController.m */; };
+		F4FDA80F1AFF9D05006C197D /* DMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA80E1AFF9D05006C197D /* DMSettingsViewController.m */; };
+		F4FDA8121AFF9D9A006C197D /* DMCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FDA8111AFF9D9A006C197D /* DMCommentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,17 @@
 		F4A071971AF3BA31003ABFB3 /* MovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A0719C1AF3BA31003ABFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A0719D1AF3BA31003ABFB3 /* MovieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTests.m; sourceTree = "<group>"; };
+		F4FDA8041AFF9BE8006C197D /* DMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMViewController.h; sourceTree = "<group>"; };
+		F4FDA8051AFF9BE8006C197D /* DMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
+		F4FDA8071AFF9CB5006C197D /* DMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewController.h; sourceTree = "<group>"; };
+		F4FDA8081AFF9CB5006C197D /* DMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewController.m; sourceTree = "<group>"; };
+		F4FDA80A1AFF9CD3006C197D /* DMMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMovieViewController.h; sourceTree = "<group>"; };
+		F4FDA80B1AFF9CD3006C197D /* DMMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMovieViewController.m; sourceTree = "<group>"; };
+		F4FDA80D1AFF9D05006C197D /* DMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSettingsViewController.h; sourceTree = "<group>"; };
+		F4FDA80E1AFF9D05006C197D /* DMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSettingsViewController.m; sourceTree = "<group>"; };
+		F4FDA8101AFF9D9A006C197D /* DMCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCommentViewController.h; sourceTree = "<group>"; };
+		F4FDA8111AFF9D9A006C197D /* DMCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCommentViewController.m; sourceTree = "<group>"; };
+		F4FDA8131AFF9DB1006C197D /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,12 @@
 		F4A071801AF3BA31003ABFB3 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				F4FDA7FB1AFF9653006C197D /* UI */,
+				F4FDA7FD1AFF996E006C197D /* Config */,
+				F4FDA7FA1AFF9653006C197D /* Networking */,
+				F4FDA7FC1AFF9653006C197D /* Vendor */,
+				F4FDA7F71AFF9653006C197D /* Common-core */,
+				F4FDA7F81AFF9653006C197D /* Common-ui */,
 				F4A071851AF3BA31003ABFB3 /* AppDelegate.h */,
 				F4A071861AF3BA31003ABFB3 /* AppDelegate.m */,
 				F4A071881AF3BA31003ABFB3 /* ViewController.h */,
@@ -117,6 +139,99 @@
 				F4A0719C1AF3BA31003ABFB3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4FDA7F71AFF9653006C197D /* Common-core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Common-core";
+			sourceTree = "<group>";
+		};
+		F4FDA7F81AFF9653006C197D /* Common-ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Common-ui";
+			sourceTree = "<group>";
+		};
+		F4FDA7FA1AFF9653006C197D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F4FDA7FB1AFF9653006C197D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA8031AFF99F3006C197D /* Root */,
+				F4FDA7FF1AFF99C2006C197D /* Comment */,
+				F4FDA8001AFF99C2006C197D /* Home */,
+				F4FDA8011AFF99C2006C197D /* Movie */,
+				F4FDA8021AFF99C2006C197D /* Settings */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F4FDA7FC1AFF9653006C197D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F4FDA7FD1AFF996E006C197D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA8131AFF9DB1006C197D /* Config.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F4FDA7FF1AFF99C2006C197D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA8101AFF9D9A006C197D /* DMCommentViewController.h */,
+				F4FDA8111AFF9D9A006C197D /* DMCommentViewController.m */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		F4FDA8001AFF99C2006C197D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA8071AFF9CB5006C197D /* DMHomeViewController.h */,
+				F4FDA8081AFF9CB5006C197D /* DMHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F4FDA8011AFF99C2006C197D /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA80A1AFF9CD3006C197D /* DMMovieViewController.h */,
+				F4FDA80B1AFF9CD3006C197D /* DMMovieViewController.m */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		F4FDA8021AFF99C2006C197D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA80D1AFF9D05006C197D /* DMSettingsViewController.h */,
+				F4FDA80E1AFF9D05006C197D /* DMSettingsViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4FDA8031AFF99F3006C197D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDA8041AFF9BE8006C197D /* DMViewController.h */,
+				F4FDA8051AFF9BE8006C197D /* DMViewController.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A0718A1AF3BA31003ABFB3 /* ViewController.m in Sources */,
+				F4FDA8091AFF9CB5006C197D /* DMHomeViewController.m in Sources */,
+				F4FDA80F1AFF9D05006C197D /* DMSettingsViewController.m in Sources */,
+				F4FDA8061AFF9BE8006C197D /* DMViewController.m in Sources */,
 				F4A071871AF3BA31003ABFB3 /* AppDelegate.m in Sources */,
+				F4FDA80C1AFF9CD3006C197D /* DMMovieViewController.m in Sources */,
 				F4A071841AF3BA31003ABFB3 /* main.m in Sources */,
+				F4FDA8121AFF9D9A006C197D /* DMCommentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
