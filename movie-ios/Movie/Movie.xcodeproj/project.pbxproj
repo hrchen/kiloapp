@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F48CE4ED1B01D3BA000628FF /* AppDelegate.m */; };
+		F48CE4F11B01D3F1000628FF /* DMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48CE4F01B01D3F1000628FF /* DMTableViewController.m */; };
 		F4A071841AF3BA31003ABFB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A071831AF3BA31003ABFB3 /* main.m */; };
-		F4A071871AF3BA31003ABFB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A071861AF3BA31003ABFB3 /* AppDelegate.m */; };
 		F4A0718A1AF3BA31003ABFB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A071891AF3BA31003ABFB3 /* ViewController.m */; };
 		F4A0718D1AF3BA31003ABFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718B1AF3BA31003ABFB3 /* Main.storyboard */; };
 		F4A0718F1AF3BA31003ABFB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */; };
@@ -32,11 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F48CE4EC1B01D3BA000628FF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F48CE4ED1B01D3BA000628FF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F48CE4EF1B01D3F1000628FF /* DMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTableViewController.h; sourceTree = "<group>"; };
+		F48CE4F01B01D3F1000628FF /* DMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTableViewController.m; sourceTree = "<group>"; };
 		F4A0717E1AF3BA31003ABFB3 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A071821AF3BA31003ABFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A071831AF3BA31003ABFB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F4A071851AF3BA31003ABFB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F4A071861AF3BA31003ABFB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F4A071881AF3BA31003ABFB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F4A071891AF3BA31003ABFB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4A0718C1AF3BA31003ABFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F48CE4EB1B01D3BA000628FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F48CE4EC1B01D3BA000628FF /* AppDelegate.h */,
+				F48CE4ED1B01D3BA000628FF /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		F4A071751AF3BA31003ABFB3 = {
 			isa = PBXGroup;
 			children = (
@@ -97,14 +109,13 @@
 		F4A071801AF3BA31003ABFB3 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				F48CE4EB1B01D3BA000628FF /* App */,
 				F4FDA7FB1AFF9653006C197D /* UI */,
 				F4FDA7FD1AFF996E006C197D /* Config */,
 				F4FDA7FA1AFF9653006C197D /* Networking */,
 				F4FDA7FC1AFF9653006C197D /* Vendor */,
 				F4FDA7F71AFF9653006C197D /* Common-core */,
 				F4FDA7F81AFF9653006C197D /* Common-ui */,
-				F4A071851AF3BA31003ABFB3 /* AppDelegate.h */,
-				F4A071861AF3BA31003ABFB3 /* AppDelegate.m */,
 				F4A071881AF3BA31003ABFB3 /* ViewController.h */,
 				F4A071891AF3BA31003ABFB3 /* ViewController.m */,
 				F4A0718B1AF3BA31003ABFB3 /* Main.storyboard */,
@@ -230,6 +241,8 @@
 			children = (
 				F4FDA8041AFF9BE8006C197D /* DMViewController.h */,
 				F4FDA8051AFF9BE8006C197D /* DMViewController.m */,
+				F48CE4EF1B01D3F1000628FF /* DMTableViewController.h */,
+				F48CE4F01B01D3F1000628FF /* DMTableViewController.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -338,10 +351,11 @@
 				F4FDA8091AFF9CB5006C197D /* DMHomeViewController.m in Sources */,
 				F4FDA80F1AFF9D05006C197D /* DMSettingsViewController.m in Sources */,
 				F4FDA8061AFF9BE8006C197D /* DMViewController.m in Sources */,
-				F4A071871AF3BA31003ABFB3 /* AppDelegate.m in Sources */,
+				F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */,
 				F4FDA80C1AFF9CD3006C197D /* DMMovieViewController.m in Sources */,
 				F4A071841AF3BA31003ABFB3 /* main.m in Sources */,
 				F4FDA8121AFF9D9A006C197D /* DMCommentViewController.m in Sources */,
+				F48CE4F11B01D3F1000628FF /* DMTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
