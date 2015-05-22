@@ -8,7 +8,14 @@
 
 #import "DMHomeViewController.h"
 
+typedef enum {
+    MovieSegment_Theater = 0,
+    MovieSegment_Upcoming
+} MovieSegment;
+
 @interface DMHomeViewController ()
+
+@property (nonatomic, readwrite, strong) UIViewController *currentViewController;
 
 @end
 
@@ -16,22 +23,59 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSArray *segmentTextContent = @[
+                                    NSLocalizedString(@"上映中", @""),
+                                    NSLocalizedString(@"即将上映", @""),
+                                    ];
+    
+    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:segmentTextContent];
+    segmentedControl.selectedSegmentIndex = 0;
+    segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    segmentedControl.frame = CGRectMake(0, 0, 200.0f, 30.0f);
+    [segmentedControl addTarget:self action:@selector(segmentChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    self.navigationItem.titleView = segmentedControl;
+    
+    UIViewController *viewController = [self viewControllerForSegmentIndex:segmentedControl.selectedSegmentIndex];
+    [self addChildViewController:viewController];
+    viewController.view.frame = self.view.bounds;
+    [self.view addSubview:viewController.view];
+    self.currentViewController = viewController;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - private methods
+- (IBAction)segmentChanged:(UISegmentedControl *)sender {
+    UIViewController *viewController = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
+    [self addChildViewController:viewController];
+    [self transitionFromViewController:self.currentViewController toViewController:viewController duration:0.5 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        [self.currentViewController.view removeFromSuperview];
+        viewController.view.frame = self.view.bounds;
+        [self.view addSubview:viewController.view];
+    } completion:^(BOOL finished) {
+        [viewController didMoveToParentViewController:self];
+        [self.currentViewController removeFromParentViewController];
+        self.currentViewController = viewController;
+    }];
 }
-*/
+
+- (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {
+    UIViewController *viewController;
+    switch (index) {
+        case MovieSegment_Theater:
+            viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DMTheaterMovieViewController"];
+            break;
+        case MovieSegment_Upcoming:
+            viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DMUpcomingMovieViewController"];
+            break;
+    }
+    return viewController;
+}
+
 
 @end

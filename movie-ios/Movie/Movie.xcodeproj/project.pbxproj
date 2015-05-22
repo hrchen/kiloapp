@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F480198A1B0B22DE007ACD34 /* DMTheaterMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48019891B0B22DE007ACD34 /* DMTheaterMovieViewController.m */; };
+		F480198D1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F480198C1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m */; };
 		F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F48CE4ED1B01D3BA000628FF /* AppDelegate.m */; };
 		F48CE4F11B01D3F1000628FF /* DMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48CE4F01B01D3F1000628FF /* DMTableViewController.m */; };
 		F4A071841AF3BA31003ABFB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A071831AF3BA31003ABFB3 /* main.m */; };
-		F4A0718A1AF3BA31003ABFB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A071891AF3BA31003ABFB3 /* ViewController.m */; };
 		F4A0718D1AF3BA31003ABFB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718B1AF3BA31003ABFB3 /* Main.storyboard */; };
 		F4A0718F1AF3BA31003ABFB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */; };
 		F4A071921AF3BA31003ABFB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A071901AF3BA31003ABFB3 /* LaunchScreen.xib */; };
@@ -33,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F48019881B0B22DE007ACD34 /* DMTheaterMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTheaterMovieViewController.h; sourceTree = "<group>"; };
+		F48019891B0B22DE007ACD34 /* DMTheaterMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTheaterMovieViewController.m; sourceTree = "<group>"; };
+		F480198B1B0B22FE007ACD34 /* DMUpcomingMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUpcomingMovieViewController.h; sourceTree = "<group>"; };
+		F480198C1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUpcomingMovieViewController.m; sourceTree = "<group>"; };
 		F48CE4EC1B01D3BA000628FF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F48CE4ED1B01D3BA000628FF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F48CE4EF1B01D3F1000628FF /* DMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTableViewController.h; sourceTree = "<group>"; };
@@ -40,8 +45,6 @@
 		F4A0717E1AF3BA31003ABFB3 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A071821AF3BA31003ABFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A071831AF3BA31003ABFB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F4A071881AF3BA31003ABFB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F4A071891AF3BA31003ABFB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F4A0718C1AF3BA31003ABFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4A071911AF3BA31003ABFB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -116,8 +119,6 @@
 				F4FDA7FC1AFF9653006C197D /* Vendor */,
 				F4FDA7F71AFF9653006C197D /* Common-core */,
 				F4FDA7F81AFF9653006C197D /* Common-ui */,
-				F4A071881AF3BA31003ABFB3 /* ViewController.h */,
-				F4A071891AF3BA31003ABFB3 /* ViewController.m */,
 				F4A0718B1AF3BA31003ABFB3 /* Main.storyboard */,
 				F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */,
 				F4A071901AF3BA31003ABFB3 /* LaunchScreen.xib */,
@@ -177,9 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				F4FDA8031AFF99F3006C197D /* Root */,
-				F4FDA7FF1AFF99C2006C197D /* Comment */,
 				F4FDA8001AFF99C2006C197D /* Home */,
 				F4FDA8011AFF99C2006C197D /* Movie */,
+				F4FDA7FF1AFF99C2006C197D /* Comment */,
 				F4FDA8021AFF99C2006C197D /* Settings */,
 			);
 			path = UI;
@@ -223,6 +224,10 @@
 			children = (
 				F4FDA80A1AFF9CD3006C197D /* DMMovieViewController.h */,
 				F4FDA80B1AFF9CD3006C197D /* DMMovieViewController.m */,
+				F48019881B0B22DE007ACD34 /* DMTheaterMovieViewController.h */,
+				F48019891B0B22DE007ACD34 /* DMTheaterMovieViewController.m */,
+				F480198B1B0B22FE007ACD34 /* DMUpcomingMovieViewController.h */,
+				F480198C1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -347,10 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A0718A1AF3BA31003ABFB3 /* ViewController.m in Sources */,
 				F4FDA8091AFF9CB5006C197D /* DMHomeViewController.m in Sources */,
 				F4FDA80F1AFF9D05006C197D /* DMSettingsViewController.m in Sources */,
+				F480198D1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m in Sources */,
 				F4FDA8061AFF9BE8006C197D /* DMViewController.m in Sources */,
+				F480198A1B0B22DE007ACD34 /* DMTheaterMovieViewController.m in Sources */,
 				F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */,
 				F4FDA80C1AFF9CD3006C197D /* DMMovieViewController.m in Sources */,
 				F4A071841AF3BA31003ABFB3 /* main.m in Sources */,
@@ -480,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -490,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Movie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
