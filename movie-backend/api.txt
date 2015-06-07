@@ -1,0 +1,26 @@
+Version: 1.0
+
+api.kiloapp.com/movie/theater
+获取电影列表（正上映）
+
+
+api.kiloapp.com/movie/upcoming
+获取电影列表（即将上映）
+
+
+api.kiloapp.com/movie/detail
+获取电影详情
+
+
+api.kiloapp.com/movie/comments
+获取电影评论
+
+
+api.kiloapp.com/movie/new_comment
+新增电影评论
+
+
+api.kiloapp.com/movie/reply_comment
+回复电影评论
+
+
