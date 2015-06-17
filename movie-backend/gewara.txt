@@ -1,0 +1,4 @@
+http://openapi.gewara.com/router/rest?
+
+POST
+
