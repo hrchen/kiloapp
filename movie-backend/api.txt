@@ -12,6 +12,10 @@ api.kiloapp.com/movie/detail
 获取电影详情
 
 
+api.kiloapp.com/movie/vote
+电影投票
+
+
 api.kiloapp.com/movie/comments
 获取电影评论
 
@@ -23,4 +27,7 @@ api.kiloapp.com/movie/new_comment
 api.kiloapp.com/movie/reply_comment
 回复电影评论
 
+
+api.kiloapp.com/movie/up_comment
+点赞评论
 
