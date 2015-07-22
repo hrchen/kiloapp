@@ -1,33 +1,309 @@
 Version: 1.0
 
-api.kiloapp.com/movie/theater
-获取电影列表（正上映）
+api.kiloapp.com/movie/list
+获取电影列表（正在上映）
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "type" : "theater"
+    }
+}
 
-api.kiloapp.com/movie/upcoming
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "movies" : [
+        {
+            "movieID" : 1212,
+            "title" : "上海",
+            "duration" : 120,
+            "type" : "喜剧,科幻",
+            "diector" : "James", 
+            "cast" : "张三,李四",
+            "posterURL" : "http://",
+            "rank" : 7.5,
+            "story" : ""
+        },
+        {
+            ...
+        }
+    ]
+}
+
+=====================================================================================
+
+api.kiloapp.com/movie/list
 获取电影列表（即将上映）
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "type" : "upcoming"
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "movies" : [
+        {
+            "movieID" : 1212,
+            "title" : "上海",
+            "duration" : 120,
+            "type" : "喜剧,科幻",
+            "diector" : "James", 
+            "cast" : "张三,李四",
+            "posterURL" : "http://",
+            "rank" : 7.5,
+            "story" : ""
+        },
+        {
+            ...
+        }
+    ]
+}
+
+=====================================================================================
 
 api.kiloapp.com/movie/detail
 获取电影详情
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "movieID" : 1212
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "movie" : {
+        "movieID" : 1212,
+        "title" : "上海",
+        "duration" : 120,
+        "type" : "喜剧,科幻",
+        "diector" : "James", 
+        "cast" : "张三,李四",
+        "posterURL" : "http://",
+        "rank" : 7.5,
+        "story" : ""
+        comments : [
+            {
+                ...
+            },
+            {
+                ...
+            }
+        ]
+    }
+}
+
+=====================================================================================
 
 api.kiloapp.com/movie/vote
 电影投票
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "movieID" : 1212
+        "rank" : 6
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "movie" : {
+        "movieID" : 1212,
+        "title" : "上海",
+        "duration" : 120,
+        "type" : "喜剧,科幻",
+        "diector" : "James", 
+        "cast" : "张三,李四",
+        "posterURL" : "http://",
+        "rank" : 7.5,
+        "story" : ""
+        comments : [
+            {
+                ...
+            },
+            {
+                ...
+            }
+        ]
+    }
+}
+
+=====================================================================================
 
 api.kiloapp.com/movie/comments
 获取电影评论
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "movieID" : 1212,
+        "page" : 0,
+        "count" : 10
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "comments" : [
+        {   
+            "commentID" : 1110,
+            "content" : "Good movie",
+            "postBy" : {
+                "userID" : 1194,
+                "displayName" : "大侠",
+                "avatarURL" : "http://"
+            },
+            "postAt" : 182945,
+            "up" : 1 // 1表示已赞，0表示未赞
+        },
+        {
+            ...
+        }
+    ]
+}
+
+=====================================================================================
 
 api.kiloapp.com/movie/new_comment
 新增电影评论
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "movieID" : 1212,
+        "content" : ""
+    }
+}
 
-api.kiloapp.com/movie/reply_comment
-回复电影评论
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "comment" : {   
+        "commentID" : 1110,
+        "content" : "Good movie",
+        "postBy" : {
+            "userID" : 1194,
+            "displayName" : "大侠",
+            "avatarURL" : "http://"
+        },
+        "postAt" : 182945,
+        "up" : 1 // 1表示已赞，0表示未赞
+    },
+}
 
+=====================================================================================
 
 api.kiloapp.com/movie/up_comment
 点赞评论
 
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "commentID" : 1110
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+    "comment" : {   
+        "commentID" : 1110,
+        "content" : "Good movie",
+        "postBy" : {
+            "userID" : 1194,
+            "displayName" : "大侠",
+            "avatarURL" : "http://"
+        },
+        "postAt" : 182945,
+        "up" : 1 // 1表示已赞，0表示未赞
+    },
+}
+
+=====================================================================================
+
+api.kiloapp.com/movie/report_comment
+举报评论
+
+request:
+{
+    "base" : {
+        "clientID" : "",
+        "userID" : "",
+        "auth" : "",
+        "system" : ""
+    },
+    "params" : {
+        "commentID" : 1110
+    }
+}
+
+response:
+{
+    "result" : 0, // 0表示正常，>0表示错误码
+}
+
+=====================================================================================
+
+api.kiloapp.com/user/info
+用户信息
+
+api.kiloapp.com/user/register
+注册用户
+
+api.kiloapp.com/user/login
+登录用户
+
+api.kiloapp.com/user/logout
+登出用户
