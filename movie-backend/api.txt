@@ -194,7 +194,8 @@ response:
                 "avatarURL" : "http://"
             },
             "postAt" : 182945,
-            "up" : 1 // 1表示已赞，0表示未赞
+            "up" : 1, // 1表示已赞，0表示未赞
+            "upAmount" : 98
         },
         {
             ...
@@ -233,7 +234,8 @@ response:
             "avatarURL" : "http://"
         },
         "postAt" : 182945,
-        "up" : 1 // 1表示已赞，0表示未赞
+        "up" : 1, // 1表示已赞，0表示未赞
+        "upAmount" : 98
     },
 }
 
@@ -267,7 +269,8 @@ response:
             "avatarURL" : "http://"
         },
         "postAt" : 182945,
-        "up" : 1 // 1表示已赞，0表示未赞
+        "up" : 1, // 1表示已赞，0表示未赞
+        "upAmount" : 98
     },
 }
 
