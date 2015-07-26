@@ -20,6 +20,7 @@
 		F40974FC1B5FD27A00147D41 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F40974F21B5FD27A00147D41 /* AFURLResponseSerialization.m */; };
 		F40974FD1B5FD27A00147D41 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F40974F41B5FD27A00147D41 /* AFURLSessionManager.m */; };
 		F40975001B5FD31000147D41 /* DMMovieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40974FF1B5FD31000147D41 /* DMMovieViewModel.m */; };
+		F454652C1B6519920041BF86 /* DMDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F454652B1B6519920041BF86 /* DMDataSource.m */; };
 		F480198A1B0B22DE007ACD34 /* DMTheaterMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48019891B0B22DE007ACD34 /* DMTheaterMovieViewController.m */; };
 		F480198D1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F480198C1B0B22FE007ACD34 /* DMUpcomingMovieViewController.m */; };
 		F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F48CE4ED1B01D3BA000628FF /* AppDelegate.m */; };
@@ -74,6 +75,8 @@
 		F40974F41B5FD27A00147D41 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		F40974FE1B5FD31000147D41 /* DMMovieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMovieViewModel.h; sourceTree = "<group>"; };
 		F40974FF1B5FD31000147D41 /* DMMovieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMovieViewModel.m; sourceTree = "<group>"; };
+		F454652A1B6519920041BF86 /* DMDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDataSource.h; sourceTree = "<group>"; };
+		F454652B1B6519920041BF86 /* DMDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDataSource.m; sourceTree = "<group>"; };
 		F48019881B0B22DE007ACD34 /* DMTheaterMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTheaterMovieViewController.h; sourceTree = "<group>"; };
 		F48019891B0B22DE007ACD34 /* DMTheaterMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTheaterMovieViewController.m; sourceTree = "<group>"; };
 		F480198B1B0B22FE007ACD34 /* DMUpcomingMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUpcomingMovieViewController.h; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 			children = (
 				F4FDA8071AFF9CB5006C197D /* DMHomeViewController.h */,
 				F4FDA8081AFF9CB5006C197D /* DMHomeViewController.m */,
+				F454652A1B6519920041BF86 /* DMDataSource.h */,
+				F454652B1B6519920041BF86 /* DMDataSource.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				F40974F71B5FD27A00147D41 /* AFHTTPSessionManager.m in Sources */,
 				F40974F51B5FD27A00147D41 /* AFHTTPRequestOperation.m in Sources */,
 				F40974E01B5FD04A00147D41 /* DMComment.m in Sources */,
+				F454652C1B6519920041BF86 /* DMDataSource.m in Sources */,
 				F40974F91B5FD27A00147D41 /* AFSecurityPolicy.m in Sources */,
 				F4FDA80C1AFF9CD3006C197D /* DMMovieViewController.m in Sources */,
 				F40974F81B5FD27A00147D41 /* AFNetworkReachabilityManager.m in Sources */,
