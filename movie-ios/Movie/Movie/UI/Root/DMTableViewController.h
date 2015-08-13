@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DMViewController.h"
 
-@interface DMTableViewController : UITableViewController
+@interface DMTableViewController : DMViewController
+
+@property (nonatomic, readwrite, retain) UITableView *tableView;
 
 @end

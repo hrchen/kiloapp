@@ -8,6 +8,8 @@
 
 #import "DMMovieViewController.h"
 
+#define kCategoryCellPerRow 3
+
 @interface DMMovieViewController ()
 
 @end
