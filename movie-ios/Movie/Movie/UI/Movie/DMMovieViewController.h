@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 KiloApp. All rights reserved.
 //
 
-#import "DMViewController.h"
+#import "DMCollectionViewController.h"
 
-@interface DMMovieViewController : DMViewController
+@interface DMMovieViewController : DMCollectionViewController
+
+
 
 @end

@@ -30,7 +30,8 @@
 		F4A0718F1AF3BA31003ABFB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A0718E1AF3BA31003ABFB3 /* Images.xcassets */; };
 		F4A071921AF3BA31003ABFB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A071901AF3BA31003ABFB3 /* LaunchScreen.xib */; };
 		F4A0719E1AF3BA31003ABFB3 /* MovieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A0719D1AF3BA31003ABFB3 /* MovieTests.m */; };
-		F4B06B531B80CB520033CE15 /* DMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B06B521B80CB520033CE15 /* DMCollectionViewController.m */; };
+		F4F8D18F1B8DA73F00D66846 /* DMCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D18E1B8DA73F00D66846 /* DMCollectionViewController.m */; };
+		F4F8D1931B8DB37600D66846 /* DMMovieViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D1921B8DB37600D66846 /* DMMovieViewCell.m */; };
 		F4F9B2DB1B7382B400FA9327 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F9B2BB1B7382B400FA9327 /* MKAnnotationView+WebCache.m */; };
 		F4F9B2DC1B7382B400FA9327 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F9B2BD1B7382B400FA9327 /* NSData+ImageContentType.m */; };
 		F4F9B2DD1B7382B400FA9327 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F9B2BF1B7382B400FA9327 /* SDImageCache.m */; };
@@ -111,8 +112,10 @@
 		F4A071971AF3BA31003ABFB3 /* MovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A0719C1AF3BA31003ABFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A0719D1AF3BA31003ABFB3 /* MovieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieTests.m; sourceTree = "<group>"; };
-		F4B06B511B80CB520033CE15 /* DMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCollectionViewController.h; sourceTree = "<group>"; };
-		F4B06B521B80CB520033CE15 /* DMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCollectionViewController.m; sourceTree = "<group>"; };
+		F4F8D18D1B8DA73F00D66846 /* DMCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCollectionViewController.h; sourceTree = "<group>"; };
+		F4F8D18E1B8DA73F00D66846 /* DMCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCollectionViewController.m; sourceTree = "<group>"; };
+		F4F8D1911B8DB37600D66846 /* DMMovieViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMovieViewCell.h; sourceTree = "<group>"; };
+		F4F8D1921B8DB37600D66846 /* DMMovieViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMovieViewCell.m; sourceTree = "<group>"; };
 		F4F9B2BA1B7382B400FA9327 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		F4F9B2BB1B7382B400FA9327 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		F4F9B2BC1B7382B400FA9327 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -177,13 +180,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F4011CFF1B7E4CCD00B9EDC3 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		F40974D31B5FCFD800147D41 /* Common-UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,7 +369,6 @@
 				F4FDA8011AFF99C2006C197D /* Movie */,
 				F4FDA7FF1AFF99C2006C197D /* Comment */,
 				F4FDA8021AFF99C2006C197D /* Settings */,
-				F4011CFF1B7E4CCD00B9EDC3 /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -411,6 +406,8 @@
 			children = (
 				F40974FE1B5FD31000147D41 /* DMMovieViewModel.h */,
 				F40974FF1B5FD31000147D41 /* DMMovieViewModel.m */,
+				F4F8D1911B8DB37600D66846 /* DMMovieViewCell.h */,
+				F4F8D1921B8DB37600D66846 /* DMMovieViewCell.m */,
 				F4FDA80A1AFF9CD3006C197D /* DMMovieViewController.h */,
 				F4FDA80B1AFF9CD3006C197D /* DMMovieViewController.m */,
 				F48019881B0B22DE007ACD34 /* DMTheaterMovieViewController.h */,
@@ -437,8 +434,8 @@
 				F4FDA8051AFF9BE8006C197D /* DMViewController.m */,
 				F48CE4EF1B01D3F1000628FF /* DMTableViewController.h */,
 				F48CE4F01B01D3F1000628FF /* DMTableViewController.m */,
-				F4B06B511B80CB520033CE15 /* DMCollectionViewController.h */,
-				F4B06B521B80CB520033CE15 /* DMCollectionViewController.m */,
+				F4F8D18D1B8DA73F00D66846 /* DMCollectionViewController.h */,
+				F4F8D18E1B8DA73F00D66846 /* DMCollectionViewController.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -557,6 +554,7 @@
 				F40974FB1B5FD27A00147D41 /* AFURLRequestSerialization.m in Sources */,
 				F4F9B2EA1B7382B400FA9327 /* UIView+WebCacheOperation.m in Sources */,
 				F40975001B5FD31000147D41 /* DMMovieViewModel.m in Sources */,
+				F4F8D1931B8DB37600D66846 /* DMMovieViewCell.m in Sources */,
 				F48CE4EE1B01D3BA000628FF /* AppDelegate.m in Sources */,
 				F4F9B2E91B7382B400FA9327 /* UIImageView+WebCache.m in Sources */,
 				F4F9B2E71B7382B400FA9327 /* UIImage+WebP.m in Sources */,
@@ -579,7 +577,7 @@
 				F40974DA1B5FD02100147D41 /* DMMovie.m in Sources */,
 				F4FDA8121AFF9D9A006C197D /* DMCommentViewController.m in Sources */,
 				F40974FC1B5FD27A00147D41 /* AFURLResponseSerialization.m in Sources */,
-				F4B06B531B80CB520033CE15 /* DMCollectionViewController.m in Sources */,
+				F4F8D18F1B8DA73F00D66846 /* DMCollectionViewController.m in Sources */,
 				F4F9B2E31B7382B400FA9327 /* SDWebImagePrefetcher.m in Sources */,
 				F4F9B2DB1B7382B400FA9327 /* MKAnnotationView+WebCache.m in Sources */,
 				F4F9B2E51B7382B400FA9327 /* UIImage+GIF.m in Sources */,

@@ -2,7 +2,11 @@
 //  DMCollectionViewController.m
 //  Movie
 //
+<<<<<<< HEAD
 //  Created by Haoran Chen on 8/16/15.
+=======
+//  Created by Haoran Chen on 8/26/15.
+>>>>>>> Add collection view.
 //  Copyright (c) 2015 KiloApp. All rights reserved.
 //
 
@@ -16,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +39,14 @@
 }
 */
 
+=======
+    
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds];
+    self.collectionView = collectionView;
+    [self.view addSubview:self.collectionView];
+    self.collectionView.frame = self.view.bounds;
+    [self.view setAutoresizesSubviews:YES];
+}
+
+>>>>>>> Add collection view.
 @end
